@@ -6,7 +6,14 @@ namespace PalindromeExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var pal = new WordSmith();
+
+            Console.WriteLine("Please enter a potential palindrome");
+            var word = Console.ReadLine();
+
+            var result = pal.IsAPalindrome(word);
+
+            Console.WriteLine((result) ? $"{word}is a Palindrome" : $"{word} is  NOT a Palindrome");
         }
     }
 }
